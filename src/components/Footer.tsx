@@ -1,5 +1,5 @@
 
-import { Wifi, Mail, Linkedin, Twitter, Github } from "lucide-react";
+import { Mail, Linkedin, Twitter, Github } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -9,9 +9,11 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <Wifi className="w-6 h-6 text-white" />
-              </div>
+              <img 
+                src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
+                alt="Smart Suile Logo" 
+                className="w-10 h-10"
+              />
               <span className="text-2xl font-bold">Smart Suile</span>
             </div>
             <p className="text-gray-300 mb-6 max-w-md leading-relaxed">

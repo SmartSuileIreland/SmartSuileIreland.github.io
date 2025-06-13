@@ -20,12 +20,19 @@ export const Hero = () => {
             Privacy-First Technology
           </div>
           
-          {/* Main Headline */}
-          <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 animate-fade-in delay-200">
-            <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Smart Suile
-            </span>
-          </h1>
+          {/* Logo and Main Headline */}
+          <div className="mb-6 animate-fade-in delay-200">
+            <img 
+              src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
+              alt="Smart Suile Logo" 
+              className="w-48 h-48 mx-auto mb-4"
+            />
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Smart Suile
+              </span>
+            </h1>
+          </div>
           
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 animate-fade-in delay-300">
             AI-Powered Human Activity Sensing Through WiFi
