@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Wifi, Activity } from "lucide-react";
 
@@ -22,11 +21,14 @@ export const Hero = () => {
           
           {/* Logo and Main Headline */}
           <div className="mb-6 animate-fade-in delay-200">
-            <img 
-              src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
-              alt="Smart Suile Logo" 
-              className="w-48 h-48 mx-auto mb-4"
-            />
+            <div className="relative inline-block mb-6">
+              <img 
+                src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
+                alt="Smart Suile Logo" 
+                className="w-32 h-32 md:w-40 md:h-40 mx-auto drop-shadow-lg"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur-xl scale-110"></div>
+            </div>
             <h1 className="text-5xl md:text-7xl font-bold text-gray-900">
               <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 Smart Suile
