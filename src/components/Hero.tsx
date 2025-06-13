@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Wifi, Activity } from "lucide-react";
 
@@ -20,16 +21,21 @@ export const Hero = () => {
             Privacy-First Technology
           </div>
           
-          {/* Logo Only */}
-          <div className="mb-8 animate-fade-in delay-200">
-            <div className="relative inline-block mb-8">
+          {/* Logo and Main Headline */}
+          <div className="mb-6 animate-fade-in delay-200">
+            <div className="relative inline-block mb-6">
               <img 
                 src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
                 alt="Smart Suile Logo" 
-                className="w-48 h-48 md:w-56 md:h-56 mx-auto drop-shadow-lg"
+                className="w-64 h-64 md:w-72 md:h-72 mx-auto drop-shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur-xl scale-110"></div>
             </div>
+            <h1 className="text-5xl md:text-7xl font-bold text-gray-900">
+              <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                Smart Suile
+              </span>
+            </h1>
           </div>
           
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 animate-fade-in delay-300">
@@ -80,3 +86,4 @@ export const Hero = () => {
     </section>
   );
 };
+
