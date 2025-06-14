@@ -1,103 +1,100 @@
 
 import { Linkedin, Mail, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import zheImg from "../assets/zhe.jpg"
+import svetoslavImg from "../assets/svetoslav.jpg"
 
 export const Team = () => {
   const teamMembers = [
     {
-      name: "Dr. Sarah Chen",
-      role: "Lead AI Researcher",
-      education: "PhD in Computer Science, MIT",
-      expertise: "Machine Learning, Signal Processing",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "sarah.chen@smartsuile.com"
+      name: "Svetoslav Nizhnichenkov",
+      role: "CEO",
+      education: "MSc Research, UCD",
+      expertise: "Software Development, AI",
+      image: svetoslavImg,
+      linkedin: "https://ie.linkedin.com/in/nizhnichenkov",
+      email: "svetoslav.nizhnichenkov@gmail.com",
     },
     {
-      name: "Dr. Michael Rodriguez",
-      role: "Technical Director",
-      education: "PhD in Electrical Engineering, Stanford",
-      expertise: "WiFi Technology, Hardware Integration",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "michael.rodriguez@smartsuile.com"
+      name: "Zhe Cui",
+      role: "CTO",
+      education: "PhD in Electrical & Electronic Engineering, UCD",
+      expertise: "IoT, Signal Processing, AI",
+      image: zheImg,
+      linkedin: "https://ie.linkedin.com/in/zhe-cui-8638171ba",
+      email: "Zhe.Amy.cui@gmail.com",
     },
-    {
-      name: "Dr. Emily Johnson",
-      role: "Privacy & Ethics Lead",
-      education: "PhD in Cybersecurity, Carnegie Mellon",
-      expertise: "Privacy Engineering, Data Protection",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "emily.johnson@smartsuile.com"
-    },
-    {
-      name: "Dr. James Park",
-      role: "Healthcare Integration",
-      education: "MD, PhD in Biomedical Engineering, Johns Hopkins",
-      expertise: "Healthcare Systems, Clinical Applications",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
-      linkedin: "#",
-      email: "james.park@smartsuile.com"
-    }
   ];
 
   return (
     <section className="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Our Expert Team
-          </h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Team</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            World-class researchers and engineers dedicated to advancing privacy-preserving 
+            Researchers and engineers dedicated to advancing privacy-preserving
             technology for human activity sensing and healthcare applications.
           </p>
         </div>
-        
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
+
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto"> */}
+        {/* <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto justify-center"> */}
+        <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
           {teamMembers.map((member, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              // className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col h-full"
+              className="w-72 flex flex-col justify-between bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
             >
-              <div className="text-center">
-                <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full ring-4 ring-blue-100 group-hover:ring-blue-300 transition-all duration-300">
-                  <img 
-                    src={member.image} 
-                    alt={member.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
+              <div className="flex flex-col justify-between h-full text-center">
+                {/* Image */}
+                <div>
+                  <div className="w-32 h-32 mx-auto mb-6 overflow-hidden rounded-full ring-4 ring-blue-100 group-hover:ring-blue-300 transition-all duration-300">
+                    <img
+                      src={member.image}
+                      alt={member.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+
+                  {/* Name & Info */}
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-blue-600 font-medium mb-2">{member.role}</p>
+                  <p className="text-sm text-gray-600 mb-3">{member.education}</p>
+                  <p className="text-sm text-gray-700 mb-6">{member.expertise}</p>
                 </div>
-                
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                  {member.name}
-                </h3>
-                <p className="text-blue-600 font-medium mb-2">
-                  {member.role}
-                </p>
-                <p className="text-sm text-gray-600 mb-3">
-                  {member.education}
-                </p>
-                <p className="text-sm text-gray-700 mb-6">
-                  {member.expertise}
-                </p>
-                
-                <div className="flex justify-center gap-2">
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-10 h-10 p-0 hover:bg-blue-50"
+
+                {/* Buttons at bottom */}
+                <div className="flex justify-center gap-2 mt-auto">
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`LinkedIn profile of ${member.name}`}
                   >
-                    <Linkedin className="w-4 h-4" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-10 h-10 p-0 hover:bg-blue-50"
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-10 h-10 p-0 hover:bg-blue-50"
+                    >
+                      <Linkedin className="w-4 h-4" />
+                    </Button>
+                  </a>
+
+                  <a
+                    href={`mailto:${member.email}`}
+                    aria-label={`Email to ${member.name}`}
                   >
-                    <Mail className="w-4 h-4" />
-                  </Button>
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      className="w-10 h-10 p-0 hover:bg-blue-50"
+                    >
+                      <Mail className="w-4 h-4" />
+                    </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -105,5 +102,7 @@ export const Team = () => {
         </div>
       </div>
     </section>
+
+
   );
 };

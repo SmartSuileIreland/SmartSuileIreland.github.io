@@ -1,46 +1,63 @@
 
-import { ExternalLink, Calendar, Users } from "lucide-react";
+import { ExternalLink, Calendar, Users, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export const Research = () => {
   const publications = [
     {
-      title: "Privacy-Preserving Human Activity Recognition Using WiFi Channel State Information",
-      authors: "S. Chen, M. Rodriguez, E. Johnson",
-      journal: "IEEE Transactions on Mobile Computing",
+      title: "A Transformer-based Multimodal Fusion Model for Efficient Crowd Counting Using Visual and Wireless Signals",
+      authors: "Z. Cui, Y. Li and Le-Nam Tran",
+      journal: "2025 IEEE Wireless Communications and Networking Conference (WCNC), Milan, Italy",
+      year: "2025",
+      doi: "10.1109/WCNC61545.2025.10978208",
+      url: "https://ieeexplore.ieee.org/document/10978208"
+    },
+    {
+      title: "ProFi-Net: Prototype-based Feature Attention with Curriculum Augmentation for WiFi-based Gesture Recognition",
+      authors: "Zhe Cui, Shuxian Zhang, Kangzhi Lou, Le-Nam Tran",
+      journal: "The 9th APWeb-WAIM joint International Conference on Web and Big Data",
+      year: "2025",
+      doi: "10.48550/arXiv.2504.20193",
+      url: "https://arxiv.org/abs/2504.20193"
+    },
+    {
+      title: "Wiviformer: Crowd Counting Based on Multimodal Fusion of Visual Image and Wireless Signal",
+      authors: "Cui, Zhe and Li, Yuli and Tran, Le-Nam",
+      journal: "SSRN",
       year: "2024",
-      abstract: "This paper presents a novel approach to human activity recognition using WiFi CSI data while maintaining strict privacy guarantees...",
-      doi: "10.1109/TMC.2024.1234567",
-      citations: 47
+      doi: "10.2139/ssrn.4963757",
+      url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4963757"
     },
     {
-      title: "Real-Time Fall Detection Through Ambient WiFi Signal Analysis",
-      authors: "M. Rodriguez, S. Chen, J. Park",
-      journal: "Nature Digital Medicine",
-      year: "2023",
-      abstract: "We demonstrate a real-time fall detection system that achieves 98.5% accuracy using only ambient WiFi signals...",
-      doi: "10.1038/s41746-023-0987-1",
-      citations: 89
+      title: "An Novel Indoor Crowd Counting Approach Based on WiFi Signals",
+      authors: "Y. Lil, X. Lu, Z. Cui, H. Wang and C. Sheng",
+      journal: "2022 41st Chinese Control Conference (CCC), Hefei, China",
+      year: "2022",
+      doi: "10.23919/CCC55666.2022.9901666",
+      url: "https://ieeexplore.ieee.org/document/9901666"
     },
     {
-      title: "Elderly Care Monitoring: A WiFi-Based Approach for Independent Living",
-      authors: "J. Park, E. Johnson, S. Chen, M. Rodriguez",
-      journal: "Journal of Medical Internet Research",
-      year: "2023",
-      abstract: "A comprehensive study on WiFi-based monitoring systems for elderly care, focusing on privacy, accuracy, and user acceptance...",
-      doi: "10.2196/45678",
-      citations: 34
+      title: "Human Behavior Recognition Method Based on WiFi Channel Status Information",
+      authors: "Y. Zhou, Z. Cui, X. Lu, H. Wang, C. Sheng and Z. Zhang",
+      journal: "2021 40th Chinese Control Conference (CCC), Shanghai, China",
+      year: "2021",
+      doi: "10.23919/CCC52363.2021.9550510",
+      url: "https://ieeexplore.ieee.org/document/9550510"
     },
     {
-      title: "Ethical Frameworks for Passive Human Sensing Technologies",
-      authors: "E. Johnson, S. Chen, J. Park",
-      journal: "ACM Transactions on Computer-Human Interaction",
-      year: "2024",
-      abstract: "This work establishes ethical guidelines and privacy frameworks for passive sensing technologies in healthcare applications...",
-      doi: "10.1145/3631234",
-      citations: 23
+      title: "A passive Indoor Localization with Convolutional Neural Network Approach",
+      authors: "Y. Xiao, Z. Cui, X. Lu and H. Wang",
+      journal: "2020 Chinese Automation Congress (CAC), Shanghai, China",
+      year: "2020",
+      doi: "10.1109/CAC51589.2020.9327135",
+      url: "https://ieeexplore.ieee.org/abstract/document/9327135"
     }
   ];
+
+
+
+
+
 
   return (
     <section className="py-20 bg-white">
@@ -50,14 +67,14 @@ export const Research = () => {
             Published Research
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our team's research contributions to the field of privacy-preserving human activity sensing 
+            Our team's research contributions to the field of privacy-preserving human activity sensing
             and healthcare technology have been published in top-tier journals and conferences.
           </p>
         </div>
-        
+
         <div className="max-w-6xl mx-auto space-y-8">
           {publications.map((paper, index) => (
-            <div 
+            <div
               key={index}
               className="bg-gradient-to-br from-gray-50 to-white p-8 rounded-xl border border-gray-200 hover:border-blue-300 transition-all duration-300 hover:shadow-lg group"
             >
@@ -66,60 +83,65 @@ export const Research = () => {
                   <h3 className="text-xl font-semibold text-gray-900 mb-3 group-hover:text-blue-700 transition-colors">
                     {paper.title}
                   </h3>
-                  
+
                   <div className="flex flex-wrap items-center gap-4 text-sm text-gray-600 mb-4">
                     <div className="flex items-center gap-1">
-                      <Users className="w-4 h-4" />
-                      {paper.authors}
+                      <Users className="w-4 h-4 flex-none" />
+                      <span className="flex-1 break-words">{paper.authors}</span>
                     </div>
                     <div className="flex items-center gap-1">
-                      <Calendar className="w-4 h-4" />
-                      {paper.year}
-                    </div>
-                    <div className="text-blue-600 font-medium">
-                      {paper.citations} citations
+                      <Calendar className="w-4 h-4 flex-none" />
+                      <span className="flex-1 break-words">{paper.year}</span>
                     </div>
                   </div>
-                  
-                  <p className="text-blue-600 font-medium mb-3">
-                    {paper.journal}
-                  </p>
-                  
-                  <p className="text-gray-700 mb-4 leading-relaxed">
-                    {paper.abstract}
-                  </p>
-                  
-                  <div className="flex flex-wrap gap-3">
-                    <Button 
-                      variant="outline" 
+
+                  <div className="flex items-center gap-1 text-sm text-gray-600 mb-4 flex-wrap">
+                    <MapPin className="w-4 h-4 flex-none" />
+                    <span className="flex-1 break-words">{paper.journal}</span>
+                  </div>
+
+                  {/* <a
+                    href={paper.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block w-full"
+                  >
+                    <Button
+                      variant="ghost"
                       size="sm"
-                      className="hover:bg-blue-50"
+                      className="text-gray-600 hover:text-blue-600 p-0 h-auto w-full justify-start whitespace-normal"
                     >
-                      <ExternalLink className="w-4 h-4 mr-2" />
+                      <ExternalLink className="w-4 h-4 mr-1 flex-none" />
+                      <span className="flex-1 break-words">
+                        DOI: {paper.doi}
+                      </span>
+                    </Button>
+                  </a> */}
+
+                  <a href={paper.url} target="_blank" rel="noopener noreferrer" className="inline-block w-full">
+                    <Button variant="ghost" size="sm" className="text-gray-600 hover:text-blue-600 p-0 h-auto">
+                      <ExternalLink className="w-4 h-4 mr-1 flex-none" />
                       View Paper
                     </Button>
-                    <Button 
-                      variant="ghost" 
-                      size="sm"
-                      className="text-gray-600 hover:text-blue-600"
-                    >
-                      DOI: {paper.doi}
-                    </Button>
-                  </div>
+                  </a>
+
+
+
+
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
-        <div className="text-center mt-12">
-          <Button 
+
+        {/* <div className="text-center mt-12">
+          <Button
             size="lg"
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
           >
             View All Publications
           </Button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

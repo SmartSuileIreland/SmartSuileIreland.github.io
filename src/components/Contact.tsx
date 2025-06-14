@@ -33,12 +33,13 @@ export const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">contact@smartsuile.com</p>
-                    <p className="text-gray-600">research@smartsuile.com</p>
+                    {/* <p className="text-gray-600">smartsuileireland@gmail.com</p> */}
+                    <a href="mailto:smartsuileireland@gmail.com" className="text-blue-600 hover:underline">smartsuileireland@gmail.com</a>
+                    {/* <p className="text-gray-600">research@smartsuile.com</p> */}
                   </div>
                 </div>
                 
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Phone className="w-6 h-6 text-purple-600" />
                   </div>
@@ -47,9 +48,9 @@ export const Contact = () => {
                     <p className="text-gray-600">+1 (555) 123-4567</p>
                     <p className="text-gray-600">+1 (555) 123-4568 (Research)</p>
                   </div>
-                </div>
+                </div> */}
                 
-                <div className="flex items-start gap-4">
+                {/* <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <MapPin className="w-6 h-6 text-green-600" />
                   </div>
@@ -59,11 +60,11 @@ export const Contact = () => {
                     <p className="text-gray-600">Tech Valley, CA 94025</p>
                     <p className="text-gray-600">United States</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             
-            <div className="bg-white p-8 rounded-xl shadow-lg">
+            {/* <div className="bg-white p-8 rounded-xl shadow-lg">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">
                 Research Partnerships
               </h3>
@@ -75,11 +76,12 @@ export const Contact = () => {
               <Button variant="outline" className="w-full">
                 Research Collaboration Inquiry
               </Button>
-            </div>
+            </div> */}
+
           </div>
           
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-lg">
+          {/* <div className="bg-white p-8 rounded-xl shadow-lg">
             <h3 className="text-2xl font-semibold text-gray-900 mb-6">
               Send Us a Message
             </h3>
@@ -140,7 +142,11 @@ export const Contact = () => {
                 Send Message
               </Button>
             </form>
-          </div>
+          </div> */}
+
+
+
+
         </div>
       </div>
     </section>

@@ -12,21 +12,21 @@ export const Hero = () => {
         <div className="absolute top-40 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-1000"></div>
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-indigo-500 rounded-full mix-blend-multiply filter blur-xl animate-pulse delay-2000"></div>
       </div>
-      
+
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-fade-in">
+          {/* <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-8 animate-fade-in">
             <Shield className="w-4 h-4" />
             Privacy-First Technology
-          </div>
-          
+          </div> */}
+
           {/* Logo and Main Headline */}
-          <div className="mb-6 animate-fade-in delay-200">
+          {/* <div className="mb-6 animate-fade-in delay-200">
             <div className="relative inline-block mb-6">
-              <img 
-                src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png" 
-                alt="Smart Suile Logo" 
+              <img
+                src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png"
+                alt="Smart Suile Logo"
                 className="w-64 h-64 md:w-72 md:h-72 mx-auto drop-shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur-xl scale-110"></div>
@@ -36,18 +36,31 @@ export const Hero = () => {
                 Smart Suile
               </span>
             </h1>
+          </div> */}
+
+          <div className="mb-6 animate-fade-in delay-200">
+            <div className="relative inline-block">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-full blur-xl scale-110"></div>
+              <img
+                src="/lovable-uploads/b7b9bb93-2746-4a3b-94f7-710bbc545a35.png"
+                alt="Smart Suile Logo"
+                // className="w-72 h-72 md:w-96 md:h-96 mx-auto drop-shadow-lg relative z-10"
+                className="w-80 h-80 md:w-[28rem] md:h-[28rem] mx-auto drop-shadow-lg relative z-10"
+              />
+            </div>
           </div>
-          
+
+
           <h2 className="text-2xl md:text-3xl text-gray-700 mb-8 animate-fade-in delay-300">
             AI-Powered Human Activity Sensing Through WiFi
           </h2>
-          
+
           {/* Description */}
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-in delay-400">
-            Revolutionary technology that detects and interprets real-time motion patterns using ambient WiFi signals. 
+            Revolutionary technology that detects and interprets real-time motion patterns using ambient WiFi signals.
             No cameras. No wearables. Complete privacy protection.
           </p>
-          
+
           {/* Key Features Icons */}
           <div className="flex justify-center gap-8 mb-12 animate-fade-in delay-500">
             <div className="flex items-center gap-2 text-gray-600">
@@ -63,9 +76,9 @@ export const Hero = () => {
               <span className="font-medium">Privacy Protected</span>
             </div>
           </div>
-          
+
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-600">
+          {/* <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in delay-600">
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105"
@@ -80,7 +93,8 @@ export const Hero = () => {
             >
               View Research
             </Button>
-          </div>
+          </div> */}
+
         </div>
       </div>
     </section>

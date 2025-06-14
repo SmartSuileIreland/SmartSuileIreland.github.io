@@ -20,7 +20,7 @@ export const Footer = () => {
               Revolutionizing human activity sensing through AI-powered WiFi technology. 
               Privacy-first solutions for healthcare, elderly care, and research applications.
             </p>
-            <div className="flex gap-4">
+            {/* <div className="flex gap-4">
               <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
                 <Linkedin className="w-5 h-5" />
               </a>
@@ -33,11 +33,11 @@ export const Footer = () => {
               <a href="#" className="w-10 h-10 bg-gray-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors">
                 <Mail className="w-5 h-5" />
               </a>
-            </div>
+            </div> */}
           </div>
           
           {/* Quick Links */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6">Technology</h3>
             <ul className="space-y-3 text-gray-300">
               <li><a href="#" className="hover:text-blue-400 transition-colors">How It Works</a></li>
@@ -45,10 +45,10 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-blue-400 transition-colors">Applications</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Privacy & Security</a></li>
             </ul>
-          </div>
+          </div> */}
           
           {/* Research */}
-          <div>
+          {/* <div>
             <h3 className="text-lg font-semibold mb-6">Research</h3>
             <ul className="space-y-3 text-gray-300">
               <li><a href="#" className="hover:text-blue-400 transition-colors">Publications</a></li>
@@ -56,19 +56,20 @@ export const Footer = () => {
               <li><a href="#" className="hover:text-blue-400 transition-colors">Collaborations</a></li>
               <li><a href="#" className="hover:text-blue-400 transition-colors">Open Source</a></li>
             </ul>
-          </div>
+          </div> */}
+
         </div>
         
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              © 2024 Smart Suile. All rights reserved.
+              © 2025 Smart Suile. All rights reserved.
             </p>
-            <div className="flex gap-6 text-sm text-gray-400">
+            {/* <div className="flex gap-6 text-sm text-gray-400">
               <a href="#" className="hover:text-blue-400 transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Terms of Service</a>
               <a href="#" className="hover:text-blue-400 transition-colors">Cookie Policy</a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
